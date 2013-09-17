@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>WebRTC audio/video recording</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		
+		<style>
+			audio {
+			    display: none;
+				vertical-align: bottom;
+				width: 10em;
+			}
+
+			video { vertical-align: top; }
+
+			input {
+				border: 1px solid #d9d9d9;
+				border-radius: 1px;
+				font-size: 2em;
+				margin: .2em;
+				width: 30%;
+			}
+
+			p, .inner { padding: 1em; }
+
+			body { text-align: center; }
+		</style>
+		<script src="RecordRTC.js"></script>
+	</head>
+
+	<body>
+		<article>
+			<section class="experiment">
+		
+				<h1 class="header">Record Video</h2>
+			
+				<div class="inner">
+					<div>
+						<video id="video" autoplay loop muted></video>
+						<audio id="audio" autoplay loop muted></audio>
+
+						<br>
+						<button id="record-video">Record</button>
+						<button id="stop-recording-video" disabled>Stop</button>
+						<br>
+
+						<video id="pvideo" muted></video>
+						<audio id="paudio"></audio>
+						<br>
+						<button id="playback">Play</button>
+			
+					</div>
+				</div>
+			</section>
+
+			<script src="script.js"></script>
+
+	</body>
+</html>
